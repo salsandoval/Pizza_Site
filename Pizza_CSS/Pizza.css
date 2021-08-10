@@ -65,3 +65,9 @@ div {
     font-family: sans-serif;
     color: #0000cd;
 }
+
+.veggies {
+    width:200px;
+    height:200px;
+    float:left;
+}

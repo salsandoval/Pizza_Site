@@ -6,8 +6,13 @@
         <meta content="width=device-width,initial-scale=1.0" name="viewport">
         <script src="pizza_JavaScript/Pizza.js" defer></script>
         <link rel="stylesheet" type=text/css href="Pizza_CSS/Pizza.css"/>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div class="main" id="section1">
+        <a href="#section1">Click to scroll to bottom of page</a>
+        </div>
         <div id="menuBG">
             <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
             <input id="btnOrder" type="button" onclick="getReceipt()"
@@ -26,6 +31,7 @@
                     <input class="size" type="radio" name="size"
                         value="Extra Large Pizza">Extra Large Pizza<br>
                 </div>
+            
 
                 <div class="menu veggies">
                     <h3>Veggies</h3>
@@ -62,9 +68,59 @@
                     <input class="toppings" type="checkbox" name="Topping"
                         value="Chicken">Chicken<br>
                 </div>
+                    <!--pizza image-->
+            <div class="main" id="section2"></div>
+                <img src="images/pizza.jpg" alt="pizza image" width="500" height="333">
+                <h1>our pizza is better than our competitors!</h1>
+                <p><a href="https://www.pizzahut.com/" target="_blank">click for nasty pizza!</a></p>
+                <button class="open-button" onclick="openForm()">Open Form</button>
+                <a href="#section1">Click to scroll to top of page</a>
+            
 
+
+                <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+                </div>
+
+                <!--pizza slide show section-->
+                <div id="slideshow">
+                    <div>
+                      <img src="https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg">
+                    </div>
+                    <div>
+                      <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F06%2F15%2Fmozzarella-pizza-margherita-FT-RECIPE0621.jpg&q=85">
+                    </div>
+                    <div>
+                      Pretty cool eh? This slide is proof the content can be anything.
+                    </div>
+                </div>
+
+                <!--sticky element-->
+                <h2>Sticky Element: Scroll Down to See the Effect</h2>
+                    <p>Scroll down this page to see how  sticky positioning works.</p>
+                <div class="sticky">I will stick to the screen when you reach my scroll position</div>
+                <p>Some example text..</p>
+                <h2>Scroll back up again to "remove" the sticky position.</h2>
+                <p>order our pizza ypu wont regret it</p>
+
+                <!-- button-->
                 
-
+                <button>Default Button</button>
+                    <a href="#" class="button">Link Button</a>
+                    <button class="button">Button</button>
+                <input type="button" class="button" value="Input Button">
+                    
                 <div id="cart">
                     <div id="showText"></div>
                     <div id="totalPrice"></div>
